@@ -228,7 +228,7 @@ var staticRenderFns = []
 
 // CONCATENATED MODULE: ./src/components/Modal.vue?vue&type=template&id=2975652b&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal.vue?vue&type=script&lang=js&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Modal.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -247,7 +247,9 @@ var staticRenderFns = []
 //
 //
 //
+
 /* harmony default export */ var Modalvue_type_script_lang_js_ = ({});
+
 // CONCATENATED MODULE: ./src/components/Modal.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_Modalvue_type_script_lang_js_ = (Modalvue_type_script_lang_js_); 
 // EXTERNAL MODULE: ./src/components/Modal.vue?vue&type=style&index=0&lang=css&
@@ -374,14 +376,25 @@ var component = normalizeComponent(
 )
 
 /* harmony default export */ var Modal = (component.exports);
+// CONCATENATED MODULE: ./src/components/index.js
+
+
+// const install = Vue => {
+//     Vue.component('modal', Modal);
+// };
+
+/* harmony default export */ var components = (Modal);
+
+// export { Modal };
+
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (Modal);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (components);
 
 
 
 /***/ })
 
-/******/ })["default"];
+/******/ });
 //# sourceMappingURL=vue2Modal.common.js.map
