@@ -1,6 +1,6 @@
 {
   "name": "vue2-modal-compnent-manbalboy",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": false,
   "description": "vue2 modal",
   "repository": {
@@ -19,12 +19,70 @@
   },
   "homepage": "https://github.com/manbalboy/vue2-modal-compnent-manbalboy.git",
   "scripts": {
-    "build-bundle": "vue-cli-service build --target lib --name vue2modal ./src/index.js"
+    "build": "vue-cli-service build --dest dist --target lib --name vue2Modal ./src/components/Modal.vue",
+    "serve": "vue-cli-service serve"
   },
-  "main" : "./dist/vue2modal.common.js",
-  "files": [
-    "dist/*",
-    "src/*",
-    "*.js"
-  ]
+  "unpkg": "dist/vue2Modal.umd.min.js",
+  "main": "./dist/vue2modal.common.js",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "no-console": "off",
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": true,
+          "useTabs": false,
+          "tabWidth": 4,
+          "trailingComma": "all",
+          "printWidth": 100,
+          "bracketSpacing": true,
+          "arrowParens": "avoid",
+          "proseWrap": "preserve",
+          "vueIndentScriptAndStyle": true,
+          "endOfLine": "auto"
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
+  }
 }

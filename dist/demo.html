@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>vue2Modal demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./vue2Modal.umd.js"></script>
+
+<link rel="stylesheet" href="./vue2Modal.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: vue2Modal
+  }
+}).$mount('#app')
+</script>
